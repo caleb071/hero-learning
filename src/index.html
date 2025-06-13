@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Hero learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+     <script src="https://kit.fontawesome.com/YOUR-KIT-CODE.js" crossorigin="anonymous"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 80px; 
+      }
+
+      .hero-section {
+        background: rgb(21, 34, 89);       
+        height: 60px;
+        display: flex;
+        padding-top: 10px;
+        margin-top: 15px;
+        margin-left: 25px;
+       font-size: 17px;
+
+      }
+  
+      .hero-section a {
+        color: wheat;
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 150px;
+        font-size: 17px;
+        gap: 10px;
+        margin-left: 80%;
+      }
+      .hero-section a i{
+        font-size: 15px;
+       
+      }
+
+      .hero-section2 {
+        box-shadow: 0 0.8px 0.8px rgba(184, 184, 185, 0.9);
+        margin-top: 28px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+      }
+
+      .hero-section2 img {
+        height: 60px;
+      }
+
+      .hero-section2 i {
+        font-size: 30px;
+        color: blue;
+        margin-top: 15px;
+      }
+
+      .section3 {
+        margin-top: 100px;
+        margin-left: 50px;
+        display: flex;
+      }
+
+      .description {
+        margin-top: 100px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 30px;
+        font-weight: 500;
+
+      }
+
+      .description span {
+        color: rgb(21, 34, 89);
+        font-weight: 600;
+        font-size: 25px;
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .section3 img {
+        height: 550px;
+        width: 520px;
+        margin-left: 120px;
+      }
+
+      .banner {
+  background: rgb(21, 34, 89);
+  color: rgb(245, 247, 249);
+  font-size: 25px;
+  text-align: center;
+  padding: 15px 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.banner span {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+}
+
+
+.banner span::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='20'><path d='M0 20 Q50 -10 100 20' stroke='red' stroke-width='4' fill='none' stroke-linecap='round' /></svg>");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.section4 a{
+   display: inline-block;
+  padding: 12px 28px;
+  background-color: rgb(255, 59, 48); 
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px; /* Curved border */
+  box-shadow: 0 4px 12px rgba(0.5, 0.5, 0.5, 0.5);
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.section5 {
+  padding: 20px;
+   
+    
+   
+}
+
+h1, h2 {
+    color: rgb(21, 34, 89);
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.text{
+    font-size: 20px;
+    color: rgb(21, 34, 89);
+    margin-bottom: 20px;
+}
+.vision, .mission {
+   font-size: 20px;
+    color: rgb(21, 34, 89);
+    margin-left: 50px;
+    margin-top: 25px;
+    font-family: Roboto;
+    
+}
+hr{
+  color: rgb(21, 34, 89);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.h3{
+  color: rgb(21, 34, 89);
+  display: block;
+  font-family: Roboto;
+  font-feature-settings: normal;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin: 20px;
+}
+
+
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+     flex-wrap: wrap;
+}
+
+.section6 .card {
+    background-color: rgb(236, 232, 255);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section6 .card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: rgb(21, 34, 89);
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.card{
+  color: rgb(21, 34, 89);
+  
+}
+
+.card h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.section7{
+  margin: 30px 35px;
+  color:  rgb(21, 34, 89);
+}
+.section7 .h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  
+
+}
+.section7 .text{
+  line-height: 40px;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.cards-section7 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+
+.card p {
+    font-size: 19px;
+    color: #000;
+    font-weight: 400;
+
+}
+/*section8*/
+
+
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.section8 .text{
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+  font-size: 22px;
+  
+
+}
+.benefit-card {
+    background-color: rgb(236, 232, 255);
+    border-radius: 10px;
+    padding: 15px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     
+}
+
+.benefit-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.benefit-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(21, 34, 89);
+    
+}
+
+.benefit-card p {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(21, 34, 89);
+    line-height: 1.5;
+}
+.section9{
+  margin-top: 30px;
+ margin: 20px;
+ 
+}
+.section9 .h2{
+  color: rgb(21, 34, 89);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.section9 .text{
+  text-align: center;
+}
+.section10{
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.section10 .card{
+  width: 300px;
+  height: 600px;
+  border-color: #ffffff;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+.section10 .card2{
+  width: 300px;
+  height: 600px;
+  border-color: #ffffff;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+.section10 .card2 .h2{
+  color: rgb(21, 34, 89);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.section10 .card2 .button a{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 200px;
+}
+.section10 .card:hover{
+  border-color: rgb(21, 34, 89);
+}
+.section10 .h3{
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: rgb(21, 34, 89);
+  font-weight: 800;
+}
+
+.section10 .text{
+  color: rgb(11, 20, 57);
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 15px;
+  padding: 10px; 
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.section10 a{
+  text-decoration: none;
+  color: rgb(21, 34, 89);
+  font-weight: 700;
+  background-color: #ffffff;
+  width: 200px;
+  height: 45px;
+  border: 2px solid;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  border-color: rgb(21, 34, 89);
+
+}
+.section10 a:hover{
+  background-color: rgb(21, 34, 89);
+  color: #ffffff;
+   font-weight: 700;
+}
+
+.section10 li ul{
+  text-decoration: none;
+  line-height: 2;
+  align-content: normal;
+  font-family: Arial, Helvetica, sans-serif;
+
+  
+}
+.section10 li ul i{
+  color: rgb(2, 255, 2);
+}
+ .section11 {
+            text-align: center;
+            padding: 50px 20px;
+        }
+ .demo-section {
+            background-color: #fff;
+            padding: 20px;
+            border: 3px solid;
+            border-color: rgb(21, 34, 89);
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+ .demo-section h1 {
+            color: #000080;
+        }
+ .demo-section p {
+            color: #000080;
+        }
+       
+ .demo-section .btn {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 7px;
+            margin-top: 10px;
+        }
+.footer {
+            background-color: rgb(21, 34, 89);
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 0px;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer .subscribe {
+            margin-top: 20px;
+        }
+        .footer .subscribe input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            margin-right: 10px;
+        }
+  .footer .subscribe input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #fff;
+            color: #000080;
+            cursor: pointer;
+        }
+  .footer .social-icons {
+            margin-top: 20px;
+        }
+  .footer .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="hero-section">
+ 
+      <a href="#"> <i class="fa-solid fa-users"></i>Log in</a>
+    </div>
+
+    <div class="hero-section2">
+      <img src="heros.png" alt="Hero Logo" />
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+     <!----section3-->
+    <div class="section3">
+      <div class="description">
+        <span>Empowering Competency<br>
+        Based Curriculum<br>
+        Education In Kenya</span>
+        Empowering schools with a simplified CBC assessment tool for<br> accurate learner evaluation and providing parents real-time access to<br> their child's progress, performance & personalized feedback.
+      </div>
+      <img src="kid.png" alt="Kid" />
+    </div>
+
+    <!-- Banner-->
+    <div class="banner">
+      With Hero Learning, you are not just keeping up with Education - <span>you're Leading it</span>
+    </div>
+
+    <!----section4-->
+    <div class="section4">
+    <a href="#">About Us</a>
+    </div>
+
+    <!----section5-->
+     <div class="section5">
+        <h1>Transforming Dreams into Reality</h1>
+        <p class="text">
+            Hero Learning is committed to advancing education by aligning with the goals in Kenya's Competency-Based Curriculum (CBC).
+             It focuses on providing tools, resources,
+              and support that schools need to navigate the challenges of modern education. 
+              The approach empowers facilitators and learners, ensuring every step taken leads to the realization of 
+              learners' full potential.
+        </p>
+        <hr>
+        <h2>Vision</h2>
+        <p class="vision">
+            To empower every learner's talent with the skills and knowledge to build a successful future.
+        </p>
+        <hr>
+        <h2>Mission</h2>
+        <p class="mission">
+            At Hero Learning, we pride ourselves in building an inclusive and robust learning environment that promotes critical thinking,
+             creativity, communication, collaboration, and lifelong learning.
+        </p>
+        <hr>
+    </div>
+    
+    <!---section6-->
+    <div class="section6">
+      <div class="h3">Our Values</div>
+
+       <div class="cards-container">
+        <div class="card">
+            <img src="image.png" alt="Excellence Icon">
+            <h2>Excellence</h2>
+             <hr>
+            <p>We are dedicated to providing high-quality solutions that guarantee accurate, reliable, and CBC-compliant content and assessments, empowering schools to achieve exceptional educational outcomes.</p>
+        </div>
+
+        <div class="card">
+            <img src="img2.png" alt="Inclusivity Icon">
+            <h2>Inclusivity</h2>
+             <hr>
+            <p>We foster an inclusive environment where every school, facilitator, parent, 
+              and learner can thrive through accessible educational tools.</p>
+        </div>
+
+        <div class="card">
+            <img src="img3.png" alt="Community Icon">
+            <h2>Community</h2>
+             <hr>
+            <p>We build strong partnerships with schools, facilitators, parents, 
+              and learners to create a collaborative and connected educational ecosystem where everyone works
+               together to support learner success.</p>
+        </div>
+
+        <div class="card">
+            <img src="img4.png" alt="Innovation Icon">
+            <h2>Innovation</h2>
+            <hr>
+            <p>We harness the power of technology to deliver smarter, 
+              data-driven solutions that enhance learning, streamline assessments, 
+              and create more effective educational experiences.</p>
+        </div>
+    </div>
+    </div>
+
+    <!---section7-->
+    <div class="section7">
+<div class="h2">Why Choose Hero Learning?</div>
+ <div class="text">
+  At Hero Learning, we offer a unique approach to education that is tailored to the needs of the<br>
+Competency-Based Curriculum (CBC) in Kenya. 
+Our solutions empower facilitators and learners to thrive in a rapidly evolving educational landscape. 
+By choosing us, you gain access to:
+ </div>
+
+    <div class="cards-section7">
+        <div class="card">
+            <img src="person1.jpg" alt="Customized Tools">
+            <h2>Customized Tools & Resources</h2>
+            <p>Aligned with CBC objectives, designed to simplify assessment, enhance learning experiences, and foster learners' growth.</p>
+        </div>
+
+        <div class="card">
+            <img src="person2.png" alt="Innovative Solution">
+            <h2>Innovative Solution</h2>
+            <p>Cutting-edge technology that streamlines education processes, helping schools stay ahead of the curve.</p>
+        </div>
+
+        <div class="card">
+            <img src="person3.png" alt="Commitment to Learners Success">
+            <h2>Commitment to Learners Success</h2>
+            <p>Our focus is on ensuring every learner achieves their full potential, preparing them for the challenges of tomorrow.</p>
+        </div>
+
+        <div class="card">
+            <img src="person4.png" alt="Expert Support">
+            <h2>Expert Support</h2>
+            <p>Ongoing training and consultation from seasoned professionals who understand the intricacies of the CBC system.</p>
+        </div>
+    </div>
+    </div>
+
+    <!---section8-->
+    <div class="section8">
+      <div class="h3">CBC Made Easy </div>
+      <div class="text">
+    Designed for schools, facilitators, and parents, our platform streamlines processes,<br>
+enhances teaching, and fosters learner success through innovative, CBC-compliant<br>
+solutions.    
+
+      </div>
+    <div class="benefits-container">
+        <div class="benefit-card">
+            <img src="school.png" alt="Schools Icon">
+            <h2>Schools</h2>
+            <p>
+                Hero Learning enhances school efficiency by streamlining administration and improving teaching effectiveness.
+                With automated tools for assessments, reporting, lesson planning, and record-keeping, schools save time and resources 
+                while ensuring high-quality education.
+            </p>
+            <p>
+                CBC-compliant and aligned with Ministry guidelines, Hero Learning provides accurate assessments, error-free reporting, 
+                and real-time analytics to address learning gaps and boost outcomes.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <img src="parent.png" alt="Parents Icon">
+            <h2>Parents</h2>
+            <p>
+                Hero Learning keeps parents actively involved in their child's education by providing real-time updates on performance, 
+                continuous assessment results, and progress reports. 
+            </p>
+            <p>
+                With clear insights and transparent communication, parents can confidently support their child's academic journey and ensure they 
+                excel in the CBC curriculum.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <img src="facilitators.png" alt="Facilitators Icon">
+            <h2>Facilitators</h2>
+            <p>
+                Hero Learning streamlines workflows, saving teachers 10+ hours weekly by automating tasks like assessments, reporting, schemes of work, 
+                lesson planning, and record of work covered.
+            </p>
+            <p>
+                This efficiency reduces administrative burdens, enhances teaching, and allows facilitators to focus on personalized instruction and learner success.
+            </p>
+        </div>
+
+          <div class="benefit-card" style="background-color: #fff; box-shadow: none;">
+         
+    </div>
+<!---section9-->
+<div class="section9">
+<div class="h2">Pricing plan</div>
+<div class="text">
+  Choose the perfect plan for your needs
+</div>
+</div>
+</div>
+<!--section10-->
+<div class="section10">
+<div class="card">
+  <div class="h3">EVIDENCE OF LEARNING</div>
+
+  <div class="text">
+    Refers to the tangible demonstrations of learner's progress, understanding and mastery of specific
+    competencies. They include portfolios of work,performance tasks, rubrics and checklists, projects and assignment,peer and 
+    self-assessment and teachers observations to evaluate practical skills and understanding. Evindence of learning ensures learners
+    acquire the skills, values and attitudes effectively.
+  </div>
+
+  <a href="#">Get a Quote</a>
+
+  <li>
+   <ul> <i class="fa-solid fa-circle-check"></i> Pre-school</ul>
+   <ul><i class="fa-solid fa-circle-check"></i> Lower primary</ul>
+   <ul><i class="fa-solid fa-circle-check"></i> Upper primary</ul>
+   <ul> <i class="fa-solid fa-circle-check"></i> Junior secondary</ul>
+   <ul> <i class="fa-solid fa-circle-check"></i> Senior Secondary</ul>
+
+  </li>
+</div>
+
+<!---section10-->
+
+<div class="card2">
+
+  <div class="h2">PREMIUM PLAN</div>
+  <div class="button">
+  <a href="#">Get a Quote</a></div>
+  <hr>
+
+  <li>
+   <ul> <i class="fa-solid fa-circle-check"></i> Standard Summative<br>Assement</ul>
+   <ul><i class="fa-solid fa-circle-check"></i> Custom Summative<br>Assessment</ul>
+   <ul><i class="fa-solid fa-circle-check"></i> Formative Assement</ul>
+   <ul> <i class="fa-solid fa-circle-check"></i> Learner Report</ul>
+   <ul> <i class="fa-solid fa-circle-check"></i> Learner Promotion</ul>
+    <ul> <i class="fa-solid fa-circle-check"></i> Learner Transfers</ul>
+
+  </li>
+
+<div class="text" style="font-weight: bold;">See all features</div>
+</div>
+
+</div>
+<!---section11-->     
+
+    <div class="section11">
+        <div class="demo-section">
+            <h1>Get started with our demo</h1>
+            <p>Get started with our demo and see the Hero Learning system in action!</p>
+            <button class="btn">Request A Demo</button>
+        </div>
+        <div class="footer">
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="subscribe">
+                <p>Subscribe to stay tuned for new web design and latest updates. Let's do it!</p>
+                <form>
+                    <input type="email" placeholder="Enter Your Email Address">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <hr>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>© 2024 All Rights Reserved</p>
+        </div>
+    </div>
+
+
+
+  </body>
+</html>
