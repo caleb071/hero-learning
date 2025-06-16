@@ -12,22 +12,24 @@
       .hero-section {
         background: rgb(21, 34, 89);       
         height: 60px;
-        display: flex;
-        padding-top: 10px;
+         padding-top: 10px;
         margin-top: 15px;
         margin-left: 25px;
        font-size: 17px;
 
       }
   
-      .hero-section a {
-        color: wheat;
+      .hero-section button{
+        color: rgb(243, 240, 236);
         text-decoration: none;
         font-weight: bold;
-        margin-left: 150px;
         font-size: 17px;
         gap: 10px;
         margin-left: 80%;
+        background: none;
+        margin-left: 80%;
+        border: none;
+        
       }
       .hero-section a i{
         font-size: 15px;
@@ -501,3 +503,4 @@ hr{
             color: #fff;
             font-size: 24px;
         }
+
