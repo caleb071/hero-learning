@@ -1,6 +1,8 @@
 // Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from './Footer';
 import heros from './assets/heros.png'; 
 import kid from './assets/kid.png';
 import img1 from './assets/image.png';
@@ -18,17 +20,8 @@ import facilitators from './assets/facilitators.png';
 function Home() {
   return (
     <div className="App">
-      {/* Your homepage content goes here (from App.js) */}
-      <div className="hero-section">
-         <Link to="/register">
-          <button>Login</button>
-        </Link>
-      </div>
-
-      <div className="hero-section2">
-        <img src={heros} alt="Hero Logo" />
-        <i className="fa-solid fa-bars"></i>
-      </div>
+        
+      <Navbar />
 
           <div className="section3">
         <div className="description">
@@ -192,7 +185,9 @@ function Home() {
             self-assessment and teachers observations to evaluate practical skills and understanding. Evidence of learning ensures learners
             acquire the skills, values and attitudes effectively.
           </div>
-          <a href="#">Get a Quote</a>
+          <Link to="/Get-quote">
+           <button>Get a Quote</button>
+           </Link>
           <ul>
             <li><i className="fa-solid fa-circle-check"></i> Pre-school</li>
             <li><i className="fa-solid fa-circle-check"></i> Lower primary</li>
@@ -204,7 +199,9 @@ function Home() {
 
         <div className="card2">
           <div className="h2">PREMIUM PLAN</div>
-          <div className="button"><a href="#">Get a Quote</a></div>
+         <Link to="/Get-quote">
+           <button>Get a Quote</button>
+           </Link>
           <hr />
           <ul>
             <li><i className="fa-solid fa-circle-check"></i> Standard Summative Assessment</li>
@@ -224,33 +221,11 @@ function Home() {
           <p>Get started with our demo and see the Hero Learning system in action!</p>
           <button className="btn">Request A Demo</button>
         </div>
-
-        <div className="footer">
-          <div>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Cookie Policy</a>
-          </div>
-          <div className="subscribe">
-            <p>Subscribe to stay tuned for new web design and latest updates. Let's do it!</p>
-            <form>
-              <input type="email" placeholder="Enter Your Email Address" />
-              <input type="submit" value="Subscribe" />
-            </form>
-          </div>
-          <hr />
-          <div className="social-icons">
-            <a href="www.facebook.com"><i className="fab fa-facebook-f"></i></a>
-            <a href="www.twitter.com"><i className="fab fa-twitter"></i></a>
-            <a href="www.instagram.com"><i className="fab fa-instagram"></i></a>
-            <a href="www.linkedin.com"><i className="fab fa-linkedin-in"></i></a>
-          </div>
-          <p>© 2024 All Rights Reserved</p>
-        </div>
-      </div>
-     
+        <Footer />
     </div>
     
+    </div>
+       
   );
 }
 

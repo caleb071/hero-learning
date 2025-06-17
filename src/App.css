@@ -405,7 +405,7 @@ hr{
 
 }
 
-.section10 a{
+.section10 button{
   text-decoration: none;
   color: rgb(21, 34, 89);
   font-weight: 700;
@@ -420,7 +420,7 @@ hr{
   border-color: rgb(21, 34, 89);
 
 }
-.section10 a:hover{
+.section10 button:hover{
   background-color: rgb(21, 34, 89);
   color: #ffffff;
    font-weight: 700;
@@ -468,39 +468,3 @@ hr{
             border-radius: 7px;
             margin-top: 10px;
         }
-.footer {
-            background-color: rgb(21, 34, 89);
-            color: #fff;
-            padding: 20px;
-            margin-bottom: 0px;
-        }
-        .footer a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .footer .subscribe {
-            margin-top: 20px;
-        }
-        .footer .subscribe input[type="email"] {
-            padding: 10px;
-            width: 250px;
-            border: none;
-            margin-right: 10px;
-        }
-  .footer .subscribe input[type="submit"] {
-            padding: 10px 20px;
-            border: none;
-            background-color: #fff;
-            color: #000080;
-            cursor: pointer;
-        }
-  .footer .social-icons {
-            margin-top: 20px;
-        }
-  .footer .social-icons a {
-            margin: 0 10px;
-            color: #fff;
-            font-size: 24px;
-        }
-
