@@ -458,7 +458,7 @@ hr{
             color: #000080;
         }
        
- .demo-section .btn {
+ .demo-section button{
             background-color: #ff4d4d;
             color: #fff;
             padding: 10px 20px;

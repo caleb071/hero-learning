@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.section1{
+    padding: 30px;
+    margin: 30px;
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 15px;
+    text-align: center;
+    font-weight: 100;
+    color: #001f4d;
+}
+.section2{
+    display: flex;
+    gap: 30px;
+
+}
+.section2 .card{
+    margin: 20px;
+    width: fit-content;
+    box-shadow: none;
+}
+.section2 .card h4{
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+
+}
+.section2 .card ul{
+    list-style: none;
+    align-items: start;
+}
+.section2 .card ul li i{
+    font-size: larger;
+}
+.section2 .form{
+    padding: 20px;
+    border: 1px solid rgb(233, 230, 230);
+    border-radius: 15px;
+
+}
+.section2 .form input{
+    margin: 15px;
+    padding: 5px;
+    width: 400px;
+    height: 50px;
+}
+.section2 .form input::placeholder{
+    color: grey;
+}
+.section2 .form select{
+      margin: 15px;
+    padding: 5px;
+    width: 400px;
+    height: 50px;
+    border-color: grey;
+
+}
+.section2 .form  textarea{
+    width: 400px;
+    height: 300px;
+    margin-left: 13px;
+    border-color: grey;
+
+}
+.section2 .form  textarea::placeholder{
+    padding: 20px;
+}
+.section2 .form p{
+    margin: 15px;
+    color: grey;
+}
+.section2 .form .form-checkbox {
+   background-color: none;
+  
+}
+.section2 .form .form-checkbox input{
+    width: 15px;
+    height: 15px;
+    border-color: grey;
+}
+.section2 .form .form-checkbox label{
+    color: grey;
+}
+.section2 .form button{
+  background-color: #0d1b52;
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.section2 .form button i{
+    margin-left: 10px;
+}
+        .section30 {
+            background-color: #b7b7b8;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+           height: 200px;
+           text-align: center;
+        }
+        .section30 h1 {
+            color: #1a2a5b;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+          .section30 p {
+            color: #1a2a5b;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+         .section30 button {
+            background-color: #d3d7df;
+            border: 1px solid #1a2a5b;
+            color: #1a2a5b;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+          .section30 button:hover {
+            background-color: #c0c4cc;
+        }
+  

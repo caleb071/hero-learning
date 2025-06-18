@@ -219,7 +219,10 @@ function Home() {
         <div className="demo-section">
           <h1>Get started with our demo</h1>
           <p>Get started with our demo and see the Hero Learning system in action!</p>
-          <button className="btn">Request A Demo</button>
+           <Link to="/request-demo">
+           <button>Request A Demo</button>
+           </Link>
+         
         </div>
         <Footer />
     </div>
